@@ -33,7 +33,14 @@ function Contact() {
           please fill out the form below to discuss any work opportunities
         </span>
 
-        <form ref={form} onSubmit={sendEmail} className="contactForm">
+        <form
+          ref={form}
+          onSubmit={(e) => {
+            sendEmail(e);
+            e.target.reset(); // Reset the form fields
+          }}
+          className="contactForm"
+        >
           <input
             type="text"
             name="from_name"

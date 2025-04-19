@@ -22,8 +22,9 @@ function Home() {
         {/* <Link><button className="btn"><img src={bag} alt="Hire" className='bag' />Hire me</button></Link>
          */}
         <button className="btn">
-          <a href="https://drive.google.com/file/d/1e3Cq749D6GtN1sGPtOfhsVTZ_4rgF5Q9/view?usp=drivesdk"></a>{" "}
-          Resume
+          <a href="https://drive.google.com/file/d/1e3Cq749D6GtN1sGPtOfhsVTZ_4rgF5Q9/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+            Resume
+          </a>
         </button>
       </div>
       <img src={image} alt="portfolio" className="bg" />
