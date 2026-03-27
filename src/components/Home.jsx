@@ -8,7 +8,7 @@ function Home() {
       <div className="introcontent">
         <span className="hello">Hello,</span>
         <span className="introtext">
-          i,m <span className="Introname">Madhu</span>
+          I&apos;m <span className="Introname">Madhu</span>
           <br />
           React Developer
         </span>
@@ -22,9 +22,15 @@ function Home() {
         {/* <Link><button className="btn"><img src={bag} alt="Hire" className='bag' />Hire me</button></Link>
          */}
         <button className="btn">
-          <a href="https://drive.google.com/file/d/1e3Cq749D6GtN1sGPtOfhsVTZ_4rgF5Q9/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+          {/* <a href="https://drive.google.com/file/d/1e3Cq749D6GtN1sGPtOfhsVTZ_4rgF5Q9/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
             Resume
-          </a>
+          </a> */}
+      <a 
+  href="https://drive.google.com/uc?export=download&id=1e3Cq749D6GtN1sGPtOfhsVTZ_4rgF5Q9"
+  className="btn"
+>
+  Download Resume
+</a>
         </button>
       </div>
       <img src={image} alt="portfolio" className="bg" />
