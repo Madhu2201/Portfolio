@@ -29,7 +29,7 @@ function Home() {
   href="https://drive.google.com/uc?export=download&id=1e3Cq749D6GtN1sGPtOfhsVTZ_4rgF5Q9"
   className="btn"
 >
-  Download Resume
+Resume
 </a>
         </button>
       </div>
