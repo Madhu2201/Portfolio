@@ -4,7 +4,7 @@ import "./Work.css";
 import Airbnb from "../assets/Airbnb.png";
 import TravelBooking from "../assets/TravelBooking.png";
 import DocumentSignature from "../assets/Docusign.png";
-import DashboardManagement from"../assets/Dashboardprojectimage.png";
+import DashboardManagement from"../assets/Dashboardimage.png";
 const projects = [
   {
     img: Airbnb,
