@@ -1,16 +1,16 @@
 import "./Home.css";
-import image from "../assets/pic.png";
-// import bag from '../assets/bag.png'
-// import { Link } from 'react-scroll'
+import image from "../assets/image.png";
+
+
 function Home() {
   return (
-    <section id="home" style={{ height: "100%" }}>
+    <section id="home">
       <div className="introcontent">
-        <span className="hello">Hello,</span>
+        <span className="hello">👋 Hello,</span>
         <span className="introtext">
           I&apos;m <span className="Introname">Madhu</span>
           <br />
-          React Developer
+          React Developer.1
         </span>
         <p className="intropara">
           Aspiring React Developer passionate about building interactive,
@@ -19,21 +19,34 @@ function Home() {
           problem-solving abilities, especially in array manipulation and state
           management using useReducer and Redux.
         </p>
-        {/* <Link><button className="btn"><img src={bag} alt="Hire" className='bag' />Hire me</button></Link>
-         */}
+        
+        {/* <div className="social-icons">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link">
+            <i className="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-link">
+            <i className="fab fa-twitter"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-link">
+            <i className="fab fa-instagram"></i>
+          </a>
+        </div> */}
+        
         <button className="btn">
-          {/* <a href="https://drive.google.com/file/d/1e3Cq749D6GtN1sGPtOfhsVTZ_4rgF5Q9/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
-            Resume
-          </a> */}
-      <a 
-  href="https://drive.google.com/uc?export=download&id=1e3Cq749D6GtN1sGPtOfhsVTZ_4rgF5Q9"
-  className="btn"
->
-Resume
-</a>
+          <a 
+            href="https://drive.google.com/uc?export=download&id=1e3Cq749D6GtN1sGPtOfhsVTZ_4rgF5Q9"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            📄 Download Resume
+          </a>
         </button>
       </div>
-      <img src={image} alt="portfolio" className="bg" />
+      <img src={image} alt="Madhu - React Developer Portfolio" className="bg" />
     </section>
   );
 }

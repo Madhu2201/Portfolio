@@ -1,91 +1,297 @@
-#work {
-  margin: 0 auto;
+/* #work {
+  width: 100%;
   min-height: 100vh;
-  width: 100vw;
-  max-width: 80rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: #000;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a0a2e 50%, #0f0f1e 100%);
   color: white;
-  padding: 2rem;
+  padding: 4rem 2rem;
 }
 
 .worksTitle {
-  font-size: 3rem;
+  font-size: clamp(2.3rem, 4vw, 3.6rem);
   margin-bottom: 1rem;
-  color: #ffcc00;
+  background: linear-gradient(135deg, #b366ff 0%, #8a2be2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .workDesc {
   font-weight: 300;
-  font-size: 1.2rem;
-  max-width: 45rem;
-  margin-bottom: 2rem;
-  color: #ccc;
+  font-size: clamp(1rem, 1.5vw, 1.35rem);
+  max-width: 60rem;
+  margin-bottom: 2.5rem;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .slider {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   gap: 2rem;
-  width: 80%;
-  max-width: 70rem;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .project-slide {
-  flex: none;
-  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+  flex: 1;
+  width: 100%;
+  max-width: 1050px;
   cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-  border-radius: 12px;
-  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+  border-radius: 20px;
+  padding: 1.5rem;
   text-align: center;
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0px 4px 15px rgba(255, 204, 0, 0.4);
-}
-
-.project-slide.active {
-  transform: scale(1.1);
-  box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.6);
+  background: linear-gradient(135deg, rgba(147, 112, 219, 0.1) 0%, rgba(138, 43, 226, 0.05) 100%);
+  border: 1px solid rgba(147, 112, 219, 0.3);
+  box-shadow: 0 12px 35px rgba(147, 112, 219, 0.15);
 }
 
 .worksImg {
-  width: 80%;
-  border-radius: 12px;
-  transition: transform 0.3s ease-in-out;
+  width: min(100%, 760px);
+  height: auto;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid rgba(184, 132, 255, 0.25);
+  box-shadow: 0 14px 30px rgba(146, 86, 230, 0.22);
+  background: #1a1228;
+  display: block;
 }
 
 .project-text {
-  margin-top: 1rem;
-  color: #fff;
-  text-align: justify;
+  width: 100%;
+  min-width: 0;
 }
 
 .project-text h3 {
-  font-size: 2rem;
-  color: #ffcc00;
+  font-size: clamp(1.5rem, 2vw, 2.4rem);
+  background: linear-gradient(135deg, #b366ff 0%, #8a2be2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 1rem;
 }
 
 .project-text ul {
-  list-style-type: none;
+  list-style: none;
   padding-left: 0;
-  font-size: 1.2rem;
-  color: #ddd;
+  margin: 0;
+  font-size: clamp(0.92rem, 1.2vw, 1.15rem);
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8;
+}
+
+.project-text li {
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.project-text li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #d5aafe;
+}
+
+@media screen and (max-width: 900px) {
+  .project-slide {
+    text-align: center;
+  }
+
+  .project-text li {
+    padding-left: 0;
+  }
+
+  .project-text li::before {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .slider {
     flex-direction: column;
+    align-items: center;
   }
-  .worksImg {
-    width: 90%;
-  }
+
   .project-slide {
-    width: 90%;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .worksImg {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+  }
+
+  .worksTitle {
+    font-size: 2rem;
+  }
+} */
+/* ==================== WORK / PROJECTS SECTION ==================== */
+#work {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 80px;
+  background: transparent;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.worksTitle {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 18px 0;
+  letter-spacing: 1px;
+}
+
+.workDesc {
+  font-size: 1.3rem;
+  color: #c4b5fd;
+  font-weight: 500;
+  margin: 0 0 70px 0;
+  max-width: 600px;
+}
+
+.slider {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1500px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.project-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  flex: 1 1 480px;
+  max-width: 560px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(167, 139, 250, 0.25);
+  border-radius: 26px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: border-color 0.3s ease, background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.project-slide.active {
+  border-color: rgba(167, 139, 250, 0.6);
+  background: rgba(167, 139, 250, 0.08);
+  box-shadow: 0 16px 40px rgba(124, 58, 237, 0.35);
+}
+
+.project-slide:hover {
+  border-color: rgba(167, 139, 250, 0.5);
+  box-shadow: 0 12px 30px rgba(124, 58, 237, 0.25);
+}
+
+.worksImg {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-bottom: 26px;
+}
+
+.project-text {
+  width: 100%;
+}
+
+.project-text h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #c4b5fd;
+  margin: 0 0 16px 0;
+}
+
+.project-text ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-text li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #d1d5db;
+}
+
+.project-text li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 1200px) {
+  #work {
+    padding: 90px 40px;
+  }
+
+  .worksTitle {
+    font-size: 3.5rem;
+  }
+
+  .worksImg {
+    height: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .worksTitle {
+    font-size: 2.5rem;
+  }
+
+  .workDesc {
+    font-size: 1.05rem;
+    margin-bottom: 40px;
+  }
+
+  .slider {
+    gap: 24px;
+  }
+
+  .project-slide {
+    padding: 22px;
+    flex: 1 1 100%;
+  }
+
+  .worksImg {
+    height: 200px;
+  }
+
+  .project-text h3 {
+    font-size: 1.4rem;
   }
 }
